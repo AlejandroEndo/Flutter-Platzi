@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'description_place.dart';
 
 void main() => runApp(MyApp());
+
+String descriptionPlace = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet porta dolor, nec semper purus. Donec sed imperdiet est. Nunc elit metus, congue quis lacinia luctus, pellentesque eget elit. Curabitur imperdiet imperdiet lectus id pretium. Mauris felis sapien, consectetur ac libero vitae, gravida ullamcorper nulla. Phasellus mattis efficitur enim. Fusce consectetur dui et lacus congue rhoncus. Cras id erat ipsum. Integer venenatis tellus at feugiat condimentum.";
+String namePlace = "Lorem ipsum";
+int stars = 4;
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -11,7 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new MyStrings(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hola mundo"),
+        ),
+        body: new DescriptionPlace(namePlace, stars, descriptionPlace),
+      ),
       debugShowCheckedModeBanner: false,
     );
   }

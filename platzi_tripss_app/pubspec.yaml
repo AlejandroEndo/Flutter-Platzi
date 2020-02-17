@@ -20,3 +20,8 @@ flutter:
 
   assets:
     - assets/images/crop.jpg
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
