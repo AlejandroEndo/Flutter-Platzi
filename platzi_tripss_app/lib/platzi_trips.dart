@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'home_trips.dart';
-import 'search_trips.dart';
-import 'profile_trips.dart';
+import 'package:platzi_tripss_app/Place/ui/screens/home_trips.dart';
+import 'package:platzi_tripss_app/Place/ui/screens/search_trips.dart';
+import 'package:platzi_tripss_app/User/ui/screens/profile_trips.dart';
 
 class PlatziTrips extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _PlatziTrips();
   }
 
